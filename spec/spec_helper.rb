@@ -34,7 +34,7 @@ module Gimme
   end
 end
 
-module StalinMatchers
+module MyMatchers
   def verify_never test_double
     verify(test_double, 0)
   end
@@ -46,5 +46,5 @@ end
 
 RSpec.configure do |config|
   config.mock_framework = Gimme::RSpecAdapter
-  config.include StalinMatchers
+  config.include MyMatchers
 end

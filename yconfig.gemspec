@@ -11,6 +11,6 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   s.files         = ["lib/yconfig.rb"]
   s.homepage      =
-    'http://rubygems.org/gems/hola'
+    'https://github.com/adammartin/yconfig'
   s.license       = 'MIT'
 end
