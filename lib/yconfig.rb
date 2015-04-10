@@ -1,6 +1,6 @@
 require 'yaml'
 
-class ConfigLoader
+class YConfig
   def initialize root_dir
     self.root_dir = root_dir
   end

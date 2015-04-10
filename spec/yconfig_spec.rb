@@ -1,7 +1,7 @@
-require 'config_loader'
+require 'yconfig'
 require 'spec_helper'
 
-describe ConfigLoader do
+describe YConfig do
   before (:each) do
     give(File).read(full_file) {
       yaml
@@ -38,7 +38,7 @@ describe ConfigLoader do
   }
 
   let (:loader) {
-    ConfigLoader.new root_dir
+    YConfig.new root_dir
   }
 
   let(:base_working_dir_key) {
